@@ -1,0 +1,61 @@
+
+body {
+  /*padding-top: 56px;  !* Отступ сверху для фиксированного меню *!*/
+
+}
+
+h1{
+  padding-top: 25px;
+}
+
+footer{
+  margin-top: 100px;
+}
+
+.invalid{
+  border-bottom: 2px solid #FF4332;
+}
+
+.no_active{
+  display: none;
+}
+
+.error {
+  color: red;
+}
+
+.carousel-item {      /* Параметры слайдера на главной странице */
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {     /* Отступы между карточками class="card" */
+  margin-bottom: 30px;
+}
+
+.like{
+  background-image: url("../img/heart.svg");
+  height: 35px;
+  width: 35px;
+}
+
+.red {
+  background-image: url("../img/heartRed.svg");
+  height: 35px;
+  width: 35px;
+}
+
+.error-msg{
+  color: white;
+  margin-top: 20px;
+  border: 2px solid #ffa908;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bold;
+}
