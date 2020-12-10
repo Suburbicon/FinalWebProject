@@ -21,6 +21,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/game">Игра</a>
                 </li>
+                @if(Auth::check())
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Выйти</a>
+                </li>
+                @else
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Войти</a>
+                    </li>
+                @endif
             </ul>
         </div>
     </div>

@@ -20,7 +20,11 @@ Route::get('/contact', 'ContactController@index');
 Route::post('/contact_store', 'ContactController@store');
 Route::get('/thankspage', 'ContactController@thanks');
 Route::get('/game','GameController@index');
-
+Route::get('/register','AuthController@registerForm');
+Route::post('/register','AuthController@register');
+Route::get('/login','AuthController@loginForm');
+Route::post('/login','AuthController@login');
+Route::get('/logout','AuthController@logout');
 
 Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
     Route::get('/','DashboardController@index');
